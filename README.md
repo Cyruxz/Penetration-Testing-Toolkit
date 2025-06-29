@@ -32,3 +32,5 @@ The script is structured in a modular way to allow easy customization and expans
 The toolkit uses standard Python libraries like socket, ftplib, paramiko, and requests, making it lightweight and easy to set up on any system with Python installed. It is intended for use in educational, learning, and authorized security testing environments only.
 
 OUTPUT:
+
+![Image](https://github.com/user-attachments/assets/df76dad7-4c0d-47ac-ae83-4ea45df8c579)
