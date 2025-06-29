@@ -1,0 +1,23 @@
+C:\Users\yokesh\pentest_toolkit> python main.py --mode scan --target 127.0.0.1 --ports 21,22,80
+[+] Scanning 127.0.0.1...
+[OPEN] Port 21 (FTP)
+[CLOSED] Port 22 (SSH)
+[OPEN] Port 80 (HTTP)
+
+C:\Users\yokesh\pentest_toolkit> python main.py --mode ftp --target 127.0.0.1 --user admin --wordlist wordlists/passwords.txt
+[+] Starting FTP brute force on 127.0.0.1
+[TRYING] admin:12345
+[TRYING] admin:admin
+[TRYING] admin:password123
+[SUCCESS] Found credentials: admin:password123
+
+C:\Users\yokesh\pentest_toolkit> python main.py --mode ssh --target 127.0.0.1 --user root --wordlist wordlists/passwords.txt
+[+] Starting SSH brute force on 127.0.0.1
+[TRYING] root:12345
+[TRYING] root:root
+[ERROR] Connection timed out
+
+C:\Users\yokesh\pentest_toolkit> python main.py --mode banner --target 127.0.0.1 --ports 21,22
+[+] Grabbing banners from 127.0.0.1
+[21] FTP Banner: "220 FileZilla Server 1.7.0"
+[22] SSH Banner: [ERROR] Connection refused
